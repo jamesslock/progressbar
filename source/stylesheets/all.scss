@@ -6,3 +6,48 @@
 @import 'base/grid-settings';
 @import 'neat';
 @import 'base/base';
+
+.container {
+	@include outer-container;
+}
+.row {
+  @include row;
+}
+.span4 {
+  @include span-columns(4);
+}
+.span6 {
+  @include span-columns(6);
+}
+.span8 {
+  @include span-columns(8);
+}
+.section {
+  padding: 40px 0;
+}
+
+.btn {
+  @include button;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flexbox--justify {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
