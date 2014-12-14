@@ -3,3 +3,15 @@ stockholm:
   date: 2014-11-27
   time: 7pm - 10pm
   location: Stockholm
+
+london:
+  published: true
+  date: 2014-11-27
+  time: 7pm - 10pm
+  location: London
+
+berlin:
+  published: true
+  date: 2014-11-27
+  time: 7pm - 10pm
+  location: Berlin

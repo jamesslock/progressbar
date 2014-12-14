@@ -2,13 +2,21 @@
 title: Progress Bar
 ---
 
-.hero
-  .container.section
-    .span4
-      %img(src="http://placehold.it/400x400")
-    .span8
-      %h1 Progress Bar
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+.hero.clearfix
+  .hero__content
+    .container.section
+      %h1 OMG Progress bar
+      %h5.followon Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+
+  .hero__bg.clearfix
+    .bg-location
+      .bg-location__image{style: "background-image: url(images/Stockholm.jpg)"}
+    .bg-location
+      .bg-location__image{style: "background-image: url(images/London.jpg)"}
+    .bg-location
+      .bg-location__image{style: "background-image: url(images/Berlin.jpg)"}
+
 
 .container.section
   = partial "layouts/partials/locations"

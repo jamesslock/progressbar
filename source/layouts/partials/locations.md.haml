@@ -1,18 +1,17 @@
 .span12
-  %h1 Meetup Locations
+  %h1.text-center Meetup Locations
   
 - data.events.each do |id, meetup|
   - if meetup.location.present?
     - unless environment == :build && !meetup.published
-      .span4
+      .span4.text-center
         = link_to "/#{id.dasherize}" do
-          %img(src="http://placehold.it/400x260")
+          %img{src: "images/#{meetup.location}.jpg"}
 
         %h2
-          = link_to "/#{id.dasherize}" do
-            = meetup.location
+          = meetup.location
 
-        %div= meetup.date.strftime("#{meetup.date.day.ordinalize} %B %Y")
+        %time= meetup.date.strftime("#{meetup.date.day.ordinalize} %B %Y")
 
         = link_to "/#{id.dasherize}", class: 'btn' do 
           View details &amp; speakers

@@ -1,0 +1,22 @@
+- meetup_id = current_page.url.gsub('/', '').gsub('meetups', '').underscore
+- meetup = data.events["#{meetup_id}"]
+
+= wrap_layout :layout do
+  .hero.clearfix
+    .hero__content
+      .container.section
+        %h1= location
+        %h5.followon= date.strftime("#{meetup.date.day.ordinalize} %B %Y")
+
+
+    .hero__bg.clearfix
+      .bg-location
+        .bg-location__image{style: "background-image: url(images/Stockholm.jpg)"}
+      .bg-location
+        .bg-location__image{style: "background-image: url(images/London.jpg)"}
+      .bg-location
+        .bg-location__image{style: "background-image: url(images/Berlin.jpg)"}
+  
+  = yield
+
+  = partial "layouts/partials/sponsors"
