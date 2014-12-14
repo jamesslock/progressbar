@@ -72,13 +72,12 @@ configure :build do
 
   data.events.each do |id, meetup|
     if meetup.published == false
-      ignore "/#{id.dasherize}.html"
+      ignore "/meetups/#{id.dasherize}.html"
     end
   end
 end
 
-
-
+page "/meetups/*", layout: 'layouts/meetup'
 
 
 

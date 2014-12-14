@@ -5,8 +5,8 @@
   .hero.clearfix
     .hero__content
       .container.section
-        %h1= location
-        %h5.followon= date.strftime("#{meetup.date.day.ordinalize} %B %Y")
+        %h1= meetup.location
+        %h5.followon= meetup.date.strftime("#{meetup.date.day.ordinalize} %B %Y")
 
 
     .hero__bg.clearfix
