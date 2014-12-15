@@ -1,17 +1,17 @@
 stockholm:
   published: true
-  date: 2014-11-27
+  date: 2014-11-14
   time: 7pm - 10pm
   location: Stockholm
 
 london:
   published: true
-  date: 2014-11-27
+  date: 2014-11-21
   time: 7pm - 10pm
   location: London
 
 berlin:
   published: true
-  date: 2014-11-27
+  date: 2014-11-28
   time: 7pm - 10pm
   location: Berlin
